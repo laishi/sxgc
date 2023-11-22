@@ -1,0 +1,6 @@
+directories:
+  output: dist
+  buildResources: build
+asar: true
+files: []
+electronVersion: 26.3.0

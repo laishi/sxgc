@@ -1,0 +1,20 @@
+appId: com.example.myapp
+productName: 2024三峡广场迎春灯饰设计方案
+directories:
+  output: out
+files:
+  - "**/*"
+extraResources:
+  - "assets/**"
+asarUnpack:
+  - "node_modules/some-module"
+win:
+  target: nsis
+  icon: "path/to/your/icon.ico"  # 设置应用程序图标
+  legalTrademarks: "Copyright © 2023 Your Name"  # 设置版权信息
+nsis:
+  oneClick: false  # 如果需要一键安装，请设置为 true
+  perMachine: false  # 如果需要在计算机上安装，请设置为 true
+  installerIcon: "./icon.png"  # 设置安装程序图标
+  uninstallerIcon: "./icon.png"  # 设置卸载程序图标
+  installerHeaderIcon: "./icon.png"  # 设置安装程序头部图标

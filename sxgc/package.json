@@ -1,0 +1,14 @@
+{
+  "name": "sxgc",
+  "version": "1.0.0",
+  "description": "2024三峡广场迎春灯饰设计方案-光爱照明设计",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "electron-builder": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^26.3.0"
+  },
+  "electronDist": "C:\\Users\\laish\\AppData\\Local\\electron-builder\\Cache\\electron\\electron-v26.3.0-win32-x64"
+}

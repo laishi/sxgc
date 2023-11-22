@@ -1,0 +1,288 @@
+.pageNumber{
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        bottom: 30px;
+        right: 45px;
+        color: #000000;
+        font-size: 18px;
+        background-color: rgba(225, 225, 225, 0.8);
+        border-radius: 50%;
+        z-index: 100;
+
+        text-align: center;
+        line-height: 30px;
+
+        
+}
+
+.reveal {
+        background-color: rgb(18, 18, 18);
+        text-decoration: none;
+}
+
+
+
+.slides {
+        background-color: rgba(46, 139, 86, 0.0);
+}
+
+
+/* 图片的宽高比: 4.325883201153569 */
+.homebg {
+        position: relative;
+        width: 100%;
+        height: max(100vw / 4.325883201153569, 200px);
+        /* 使用 min 函数来确保高度不小于 200px */
+        background-color: rgba(0, 48, 32, 0.0);
+        background-image: url("../img/page/fireworks.png");
+        background-size: 100% auto;
+        background-position: top;
+        background-repeat: no-repeat;
+}
+
+.homeTitle {
+        position: relative;
+        width: 80%;
+        margin: 0 auto;
+        height: max(100vh - 100vw/4.325883201153569, 500px);
+        /* 使用 min 函数来确保高度不小于 200px */
+        background-color: rgba(229, 39, 39, 0.0);
+        background-image: url("../img/page/01title.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+}
+
+
+
+
+.title {
+        position: relative;
+        width: 100%;
+        height: auto;
+        /* padding: 1em 0; */
+        background-color: rgba(0, 48, 32, 0.0);
+}
+
+.title img {
+        position: relative;
+        width: 200px;
+        height: auto;
+        background-color: rgba(0, 48, 32, 0.0);
+}
+
+
+
+.title h3 {
+        color: aliceblue;
+        font-size: 2.5em;
+        /* line-height: 3em; */
+        filter: blur(1px);
+        color: #fff;
+        text-shadow: 0px 0px 10px #00b3ff,
+                0px 0px 10px #00b3ff,
+                0px 0px 20px #00b3ff,
+                0px 0px 30px #00b3ff,
+                0px 0px 4px #00b3ff;
+}
+
+
+
+.anotation {
+        position: relative;
+        width: 90%;
+        height: auto;
+        margin: 0 auto;
+        padding: 0 2em;
+        background-color: rgba(170, 36, 197, 0.0);
+        /* padding: 50px 20%; */
+}
+
+
+
+.info {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        margin: 0 auto;
+        /* padding: 0 2em 0 2em; */
+        background-color: rgba(6, 115, 35, 0.0);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: hidden;
+        /* padding: 50px 20%; */
+}
+
+.info iframe {
+        position: relative;
+        width: 90%;
+        height: 100%;
+        margin: 0 auto;
+}
+
+
+
+
+
+li {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 2em;
+        line-height: 2em;
+}
+
+p {
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 2.0em;
+        line-height: 2.0em;
+        text-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+section span {
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 1em;
+        line-height: 2em;
+        padding: 0.2em 1em;
+        margin-left: 0.5em;
+        margin-right: 0.5em;
+        border-radius: 1.5em;
+        background-color: rgb(255, 23, 23);
+        text-shadow: 3px 3px 6px rgba(0, 0, 0, 1.5);
+        /* 添加阴影效果 */
+}
+
+
+.reveal .controls {
+        display: none;
+        position: absolute;
+        top: auto;
+        bottom: 12px;
+        right: 12px;
+        left: auto;
+        z-index: 11;
+        color: #fff;
+        pointer-events: none;
+        font-size: 10px;
+    }
+
+
+
+.imgBox {
+        position: relative;
+        margin: 0 auto;
+        /* background-image: url("../img/01title.png"); */
+        background-size: contain;
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-color: rgba(226, 165, 43, 0.0);
+}
+
+.imgBox .imgCenter {
+        position: relative;
+        margin: 0 auto;
+        width: 100%;
+}
+
+
+.imgFloat {
+        position: absolute;
+        float: left;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: rgba(0, 0, 0, 0.5);
+
+}
+
+.imgFloat img {
+        position: relative;
+        width: 100%;
+}
+
+
+iframe {
+        z-index: -1;
+}
+
+.imgShow {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100vh;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        animation: bigger 10s alternate infinite ease-in-out 3s;
+        /* 设置动画延迟开始时间为10秒 */
+        will-change: transform;
+        transform-origin: center center;
+        z-index: -1;
+        /* background-color: #00b3ffc8; */
+}
+
+
+
+
+/* 在每个具有 .imgbgZoom 类的幻灯片中设置背景图像的缩放和动画效果 */
+.imgbgZoomWait {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        will-change: transform;
+        transform-origin: center center;
+        z-index: -1;
+}
+
+.imgbgZoom {
+        animation: zoom 10s alternate infinite ease-in-out 3s;
+}
+
+.imgSpin{
+	/* perspective: 500px;	 */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+
+
+
+
+@keyframes rotateY {
+        0% {
+                transform: rotateY(0deg);
+        }
+
+        100% {
+                transform: rotateY(360deg);
+        }
+}
+
+/* 定义动画效果 */
+@keyframes bigger {
+        0% {
+                transform: scale(1.0);
+        }
+
+        100% {
+                transform: scale(1.1);
+        }
+}
+
+/* 定义动画效果 */
+@keyframes zoom {
+        0% {
+                transform: scale(1.0);
+        }
+
+        100% {
+                transform: scale(1.1);
+        }
+}
